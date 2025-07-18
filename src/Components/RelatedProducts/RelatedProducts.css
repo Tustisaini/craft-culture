@@ -1,0 +1,36 @@
+.relatedproducts {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .relatedproducts h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .relatedproducts hr {
+    width: 50%;
+    margin: 10px auto;
+    border: 1px solid #ddd;
+  }
+  
+  .realtedproducts-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .realtedproducts-item {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

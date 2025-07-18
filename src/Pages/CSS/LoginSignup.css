@@ -1,0 +1,92 @@
+/* Centering the LoginSignup container */
+.loginsignup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Full-screen height */
+    background-color: #f4f4f4; /* Light gray background */
+    padding: 50px;
+}
+
+/* Styling the container */
+.loginsignup-container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 16px; /* More rounded corners */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+    text-align: center;
+    width: 450px; /* Increased width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Title */
+.loginsignup-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Input fields */
+.loginsignup-fields {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px; /* Increased spacing */
+}
+
+.loginsignup-fields input {
+    width: calc(100% - 20px); /* Keeps inputs evenly spaced inside */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Input focus effect */
+.loginsignup-fields input:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Continue button - larger size */
+button {
+    width: 45%;
+    padding: 12px;
+    background-color: pink;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+    margin-top: 15px;
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #d46a90;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Login link */
+.loginsignup-login {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+.loginsignup-login span {
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.loginsignup-login span:hover {
+    text-decoration: underline;
+}

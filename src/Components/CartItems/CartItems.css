@@ -1,0 +1,168 @@
+.cartitems {
+    max-width: 1200px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Format */
+.cartitems-format-main {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1fr 1fr 1fr 0.5fr;
+    font-weight: bold;
+    color: #333;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Individual Cart Item */
+.cartitems-format {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Product Image - Larger */
+.carticon-product-icon {
+    width: 90px;  
+    height: 90px;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+/* Quantity Button */
+.cartitems-quantity {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 6px 14px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: default;
+}
+
+/* Remove Icon */
+.cartitems-remove-icon {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto; 
+}
+
+.cartitems-remove-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Divider */
+hr {
+    border: none;
+    height: 1px;
+    background: #ddd;
+    margin: 10px 0;
+}
+
+/* Cart Total Section */
+.cartitems-down {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.cartitems-total {
+    width: 350px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cartitems-total h1 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.cartitems-total-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    padding: 10px 0;
+    color: #555;
+}
+
+.cartitems-total-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cartitems-total hr {
+    margin: 10px 0;
+}
+
+/* Checkout Button */
+.cartitems-total button {
+    width: 100%;
+    background: #ff4c3b;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-top: 15px;
+}
+
+.cartitems-total button:hover {
+    background: #e03c2f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cartitems {
+        padding: 15px;
+    }
+
+    .cartitems-format-main, .cartitems-format {
+        grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+        font-size: 14px;
+    }
+
+    /* Product Image - Further Increased */
+    .carticon-product-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .cartitems-quantity {
+        padding: 4px 10px;
+    }
+
+    /* Remove Icon - Smaller */
+    .cartitems-remove-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Cart Total - Centered on Mobile */
+    .cartitems-down {
+        justify-content: center;
+    }
+
+    .cartitems-total {
+        width: 100%;
+        max-width: 400px;
+    }
+}

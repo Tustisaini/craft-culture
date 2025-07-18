@@ -1,0 +1,49 @@
+.item{
+    width:350 px;
+}
+
+.item p{
+
+    margin: 6px 0px
+}
+
+.item-prices {
+    display: flex;  /* Align prices in a row */
+    gap: 20px;      /* Adds space between new and old price */
+    align-items: center; /* Ensures proper alignment */
+}
+
+.item-price-new {
+    color: #374151;
+    font-size: 18px; /* Fix typo: "18x" → "18px" */
+    font-weight: 600;
+}
+
+.item-price-old {
+    color: #8c8c8c;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+
+.item:hover{
+transform: scale(1.05);
+transition: 0.6s;
+}
+
+
+.item {
+    width: 220px; 
+    text-align: center;
+  }
+  
+  .item img {
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+    display: block;
+    margin: 0 auto;
+  }
+  

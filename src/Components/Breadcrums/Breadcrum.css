@@ -1,0 +1,27 @@
+.Breadcrum {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+}
+
+.Breadcrum img {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+}
+
+.Breadcrum a {
+    text-decoration: none;
+    color: #0073e6;
+    transition: color 0.3s ease-in-out;
+}
+
+.Breadcrum a:hover {
+    color: #005bb5;
+}
